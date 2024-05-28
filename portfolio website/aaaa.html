@@ -1,0 +1,239 @@
+<div class="tab-titles">
+  <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+  <p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+<div class="tab-contents active-tab " id="skills">
+  <ul>
+    <li><span>Frontend</span> Designing websites</li><br>
+    <li><span>web development</span>Web development</li><br>
+    <li>Data science<span></span>Learning Python</li><br>
+  </ul>
+</div>
+<div class="tab-contents " id="education">
+  
+
+</div>
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tablinks = document.getElementsByClassName("tab-contents");
+ function opentab(tabname){
+   for(tablink of tablinks){
+     tablink.classlist.remove("active-link");
+   }
+   for(tablink of tablinks){
+     tablink.classlist.remove("active-link");
+ }
+  }
+ </script>
+tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+  
+}
+
+.tab-links{
+  position: relative;
+  left: 595px;
+  bottom: 340px;
+  margin-right: 50px;
+  font-weight: 500;
+  font-size: 24px;
+  }
+
+  .tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left:0 ;
+    bottom: 80px;
+    transition: 0.5s;
+  }
+
+  .tab-links.active-link::after{
+    width: 50%;
+  }
+
+  .tab-contents ul li{
+     list-style: none;
+     margin: 10px 0;
+     position: relative;
+     bottom: 250px;
+     right: 450px;
+
+  }
+
+  .tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+    
+  }
+.tab-contents{
+  display:none;
+}
+
+.tab-contents.active-tab{
+  
+  
+  display: block;
+  
+}
+
+<script>
+  var tablinks= document.getElementsByClassName("tab-link")
+  var tabcontents= document.getElementsByClassName("tab-content")
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link")
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+      }
+ }
+</script>
+onclick="opentab('skill')"
+
+tab-contents{
+  display: none;
+}
+.tab-contents.active-tab{
+  display: block;
+}
+tab-links::after{
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 20px;
+  width: 0;
+  height: 3px;
+  background-color: #ff004f;
+  transition: 0.5s;
+  
+}
+.tab-links.active-link::after{
+ width: 10%;
+ 
+}
+<li>
+  <span>2024</span><br />web development Training from Zaptek
+  bootcamp
+</li>
+<br />
+<li><span>2024</span> <br />Web development from Udemy</li>
+<br />
+<li>
+  <span>2024</span> <br />Data Science Training at Udemy
+</li>
+
+
+
+<div id="about">
+  <div class="Container">
+    <div class="row">
+      <div class="about-col-1">
+        <img
+          src="/WhatsApp Image 2024-05-23 at 13.31.35_209f724b.jpg"
+          alt=""
+          width="350px"
+          height="500px"
+        />
+      </div>
+      <div class="about-col-2">
+        <h1>About Me</h1>
+        <p>
+          A dedicated computer science student of one of the gratest
+          institutions in Ghana. <br />
+          Though the computer science has been rough but we are still moving
+          with a great <br />
+          speed and that is one of my greatest achievements.As a young
+          Frontend developer <br />
+          I have come across many cahallenges when its comes to coding but
+          perserverance.
+        </p>
+
+        <div class="tab-titles">
+          <ul>
+            <li class="tab-links active">
+              <a> <i class="fa fa-html5"></i>SKILL</a>
+                                   <span>2024</span> <br />Web development from Udemy
+                  </li> </li>
+            <li class="tab-links">
+              <span>EXPERINCE</span> <li>
+
+               
+            </ul>
+          </div>
+
+          .tab-titles {
+  
+            position: relative;
+            left: 630px; 
+            bottom: 270px;
+            margin-right: 50px;
+            font-weight: 500;
+            font-size: 24px;
+          }
+          
+          .tab-links{
+            display: inline-block;
+            list-style: none;
+            color: white;
+            justify-content: space-between;
+           padding: 10px;
+          }
+            
+          
+          
+          .tab-contents{
+            position: relative;
+            left: 450px;
+            bottom: 430px; 
+          
+          }
+          
+          .tab-contents span{
+            color: #ff004f;
+          }
+          
+          .tab-contents ul li{
+            list-style: none;
+          }
+          
+          .tab-links.active{
+          
+          border: 1px solid #ff004f;
+          background-color: transparent;
+          
+          }
+          
+          .tab-links:hover{
+            
+          border: 1px solid #ababab;
+          background-color: #ff004f;
+          transition: 0.5s;
+          
+          }
+          
+          .tab-titles ul li a{
+            text-decoration: none;
+            color: #ababab;
+          }
+          
+          .tab-links:hover{
+           
+           
+          
+          }
+          
+          .menu ul li{
+            list-style: none;
+            display: none;
+          }
+          
+          .tab-links:hover.menu{
+            position: absolute;
+            background-color: #ababab;
+            margin-top: ;
+          }
